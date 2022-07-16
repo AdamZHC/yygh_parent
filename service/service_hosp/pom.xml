@@ -18,6 +18,8 @@
 
     <dependencies>
         <!--还是强调那一点 自己定义的用到啥就引入啥-->
+        <!--这里纯属是误打误撞了！其实应该是引入service_util-->
+        <!--但是可以跑通的原因就是在service外部也引入了service_util所以说这里没有问题-->
         <dependency>
             <groupId>com.hit.adam</groupId>
             <artifactId>common_util</artifactId>

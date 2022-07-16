@@ -13,6 +13,13 @@ import org.springframework.stereotype.Component;
 @SpringBootApplication
 //因为需要不是在一个项目的Bean管理
 //所以需要加上这样一个组件扫描注解来实现注册bean
+//swagger2类似是一个工具的实现，并不需要真的在对应的工具类里面启动对应的服务
+//我就说吧！！！只是在对应的项目启动的端口上多开了一个地址
+//没有启动一个新的服务，所以说不能算是微服务的思想
+
+/**
+ * 多出来的那几个部分估计是弄错了！！！
+ */
 @ComponentScan(basePackages = "com.hit.adam")
 public class ServiceHospApplication {
     public static void main(String[] args) {
