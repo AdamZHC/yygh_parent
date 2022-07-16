@@ -1,0 +1,24 @@
+#服务端口号
+server:
+  port: 8201
+
+#spring相关配置
+spring:
+  #服务名称-类似于微服务架构的服务名
+  application:
+    name: hosp
+  #开发环境
+  profiles:
+    active: dev
+
+  datasource:
+    url: jdbc:mysql://1.117.95.22:3306/yygh_hosp?serverTimezone=UTC&useSSL=false
+    username: root
+    password: tagpetc7
+    #这里可能有些存疑
+    driver-class-name: com.mysql.jdbc.Driver
+
+  #json的全局格式
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
