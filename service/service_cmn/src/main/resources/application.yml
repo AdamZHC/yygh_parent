@@ -1,18 +1,18 @@
 #服务端口号
 server:
-  port: 8201
+  port: 8202
 
 #spring相关配置
 spring:
   #服务名称-类似于微服务架构的服务名
   application:
-    name: hosp
+    name: cmn
   #开发环境
   profiles:
     active: dev
 
   datasource:
-    url: jdbc:mysql://1.117.95.22:3306/yygh_hosp?serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://1.117.95.22:3306/yygh_cmn?serverTimezone=UTC&useSSL=false
     username: root
     password: tagpetc7
     #这里可能有些存疑

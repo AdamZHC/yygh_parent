@@ -15,14 +15,14 @@ USE `yygh_cmn`;
 #
 
 CREATE TABLE `dict` (
-  `id` bigint(20) NOT NULL DEFAULT '0' COMMENT 'id',
-  `parent_id` bigint(20) NOT NULL DEFAULT '0' COMMENT '上级id',
+  `id` bigint NOT NULL DEFAULT '0' COMMENT 'id',
+  `parent_id` bigint NOT NULL DEFAULT '0' COMMENT '上级id',
   `name` varchar(100) NOT NULL DEFAULT '' COMMENT '名称',
-  `value` bigint(20) DEFAULT NULL COMMENT '值',
+  `value` bigint DEFAULT NULL COMMENT '值',
   `dict_code` varchar(20) DEFAULT NULL COMMENT '编码',
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-  `is_deleted` tinyint(3) NOT NULL DEFAULT '1' COMMENT '删除标记（0:不可用 1:可用）',
+  `is_deleted` tinyint NOT NULL DEFAULT '1' COMMENT '删除标记（0:不可用 1:可用）',
   PRIMARY KEY (`id`),
   KEY `idx_dict_code` (`dict_code`),
   KEY `idx_parent_id` (`parent_id`)

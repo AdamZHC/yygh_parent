@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="model" />
         <module name="service_hosp" />
+        <module name="service_cmn" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,6 +18,7 @@
       <module name="common_util" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="service" options="-parameters" />
+      <module name="service_cmn" options="-parameters" />
       <module name="service_hosp" options="-parameters" />
       <module name="service_util" options="-parameters" />
     </option>

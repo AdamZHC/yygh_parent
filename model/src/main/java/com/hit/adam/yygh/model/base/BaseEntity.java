@@ -29,6 +29,7 @@ public class BaseEntity implements Serializable {
 
     @ApiModelProperty(value = "创建时间")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    //这里没有Fill.INSERT显然是没有自动填充的
     @TableField("create_time")
     private Date createTime;
 
